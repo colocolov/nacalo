@@ -1,7 +1,14 @@
 .footer
-  background-color: #3e3e3e
-  padding: 60px 0
-  color: $white
+  margin-top: var(--sectionPaddingTop)
+  margin-bottom: 80px
+
+  &__container
+    // padding: 60px 0
+    color: $white
+    background-color: $dark-grey
+    padding: var(--sectionPaddingTop) 15px
+    border-radius: var(--borderRadius)
+    box-shadow: $box-shadow
 
   &__item
     transition: color 0.3s ease

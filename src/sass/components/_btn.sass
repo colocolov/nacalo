@@ -6,19 +6,20 @@
   outline: none
 
 a.btn
-  color: inherit
+  // color: inherit
 
 .btn
   // align-self: center // если кнпка находится во flex-контейнере и нужно выровнять ее по середине
   display: inline-block
-  background: $bgc
-  // border-radius: 20px
+  background: $grey
+  border-radius: 112px
   // border: 2px solid $green
-  padding: 10px 32px
+  padding: 11px 70px 11px 70px
   color: $white
-  @include font(700, 16, 18)
+  @include font(600, 32, 38)
   text-align: center
-  text-transform: uppercase
+  // text-transform: uppercase
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
   transition: background 0.5s ease-in-out, color 0.5s ease-in-out, transform 0.3s ease
   &:focus
     outline: none
@@ -35,6 +36,10 @@ a.btn
       color: $white
   &-error
     margin-top: 20px
+  &-hero
+    background-color: rgba(0, 0, 0, 0.1)
+    backdrop-filter: blur(4px)
+    border: 1px solid rgba(255, 255, 255, 0.3)
 
 
 // стрелки слайдера

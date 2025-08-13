@@ -1,20 +1,26 @@
-$bgc: #FFFFFF
+$bgc: #F5F5F5
 $white: #FFFFFF
-$black: #354053
-$text: rgba(0, 0, 0, 0.7)
+$black: #ECE5D9
+$text: #000000
+$text-light: #f0efed
+
 // добавлять и удалять
-$grey: #F6F6F6
+$grey: #A7A7A7
+$dark-grey: #4E5858
 $red: #ED2228
+$beige: #ECE5D9
 
 // добавлять и удалять
 $gradient-dark: linear-gradient(180deg, #002535 0%, transparent 100%) #003851
+$gradient-green: linear-gradient(135deg, #213837 0%, transparent 100%) #355553
+$box-shadow: 4px 4px 15px 0 rgba(0, 0, 0, 0.25)
 
 // анимация
 $cubic: all 0.7s cubic-bezier(0.76, -0.76, 0.25, 1.26)
 
 // переменные по умолчанию
 $containerPadding: 15
-$contentWidth: 1240
+$contentWidth: 1400
 $containerWidth: $contentWidth + $containerPadding * 2
 $minWidth: 320
 
@@ -31,16 +37,18 @@ $mobileSmall: 479.98px // Телефоны S - 480px
   --widthscrollbar: 17px
   // **********************************************
   // СДЕЛАТЬ ВЕРХНИЙ И НИЖНИЙ ОТСТУП У SECTION
-  --sectionPaddingTop: 80px
-  --sectionPaddingBottom: 80px
+  --sectionPaddingTop: 40px
+  --sectionPaddingBottom: 40px
+  --borderRadius: 20px
   // ---------------- END
+
 
 %body
   font-family: $font-first
-  @include font(400, 18, calc(18 * 1.2))
+  @include font(500, 16, calc(16 * 1.2))
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
 
 %head
-  font-family: $font-first
+  font-family: $font-second
   @include font(700, 42, calc(42 * 1.2))
