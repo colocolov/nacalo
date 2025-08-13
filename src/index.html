@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+@include('html/head.html', { "title":"Home Page" })
+
+<body class="page__body">
+  <div class="wrapper">
+    @include('html/header.html')
+
+    <main class="main">
+
+      <div class="hello__container">
+        Hello, friend!<br>
+        Thank you for use my GulpTasks.<br><br>
+        Fill out the file <b>assets/info.txt</b> with your data.<br><br>
+        Don't foger to see page <a href="docs.html"><span
+                style="text-transform: uppercase; font-weight: 700;">Documentation</span></a> with code-snippets and
+        hotkeys.
+
+      </div>
+
+    </main>
+
+    @include('html/footer.html')
+  </div><!-- /.wrapper -->
+</body>
+
+</html>

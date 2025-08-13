@@ -1,0 +1,787 @@
+[
+    {
+        "key": "group_654400c752316",
+        "title": "ГЛАВНАЯ страница",
+        "fields": [
+            {
+                "key": "field_65440260ef91a",
+                "label": "Фон",
+                "name": "home-bg",
+                "aria-label": "",
+                "type": "group",
+                "instructions": "Если желаете на фоне чтобы воспроизводилось видео, то загрузите видео-файл в раздел Видео.\r\nЕсли же вы оставите раздел видео пустым, то вы можете установить в качестве фона изображение.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "table",
+                "wpml_cf_preferences": 1,
+                "sub_fields": [
+                    {
+                        "key": "field_65440272ef91b",
+                        "label": "Видео",
+                        "name": "home-video",
+                        "aria-label": "",
+                        "type": "file",
+                        "instructions": "Файл должен быть в формате *.mp4. Название НЕ должно содержать русских букв, пробелов. Файл должен быть небольшого размера (желательно меньше 7мб), но хорошего разрешения (желательно 1280px).",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "url",
+                        "library": "all",
+                        "min_size": "",
+                        "max_size": "",
+                        "mime_types": "",
+                        "wpml_cf_preferences": 1
+                    },
+                    {
+                        "key": "field_6544028cef91c",
+                        "label": "Изображение",
+                        "name": "home-img",
+                        "aria-label": "",
+                        "type": "image",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_65440272ef91b",
+                                    "operator": "==empty"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "url",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": "",
+                        "preview_size": "medium",
+                        "wpml_cf_preferences": 1
+                    }
+                ]
+            },
+            {
+                "key": "field_654400c70a143",
+                "label": "Заголовок",
+                "name": "home-head",
+                "aria-label": "",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "table",
+                "wpml_cf_preferences": 1,
+                "sub_fields": [
+                    {
+                        "key": "field_6544012be5e40",
+                        "label": "Название",
+                        "name": "home-title",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "65",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "wpml_cf_preferences": 2
+                    },
+                    {
+                        "key": "field_65440141e5e41",
+                        "label": "Над заголовком",
+                        "name": "home-subtitle",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "35",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "wpml_cf_preferences": 2
+                    }
+                ]
+            },
+            {
+                "key": "field_65440b859563d",
+                "label": "Описание",
+                "name": "home-text",
+                "aria-label": "",
+                "type": "wysiwyg",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "all",
+                "toolbar": "basic",
+                "media_upload": 0,
+                "delay": 0,
+                "wpml_cf_preferences": 2
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_type",
+                    "operator": "==",
+                    "value": "front_page"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "left",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    },
+    {
+        "key": "group_6546bf9f30eb9",
+        "title": "КОНТАКТЫ страница",
+        "fields": [
+            {
+                "key": "field_6546bf9f940f8",
+                "label": "Фоновые изображения",
+                "name": "contact-imgs",
+                "aria-label": "",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "table",
+                "wpml_cf_preferences": 1,
+                "sub_fields": [
+                    {
+                        "key": "field_654a98e6588ed",
+                        "label": "Изображение в шапке",
+                        "name": "contact-img-main",
+                        "aria-label": "",
+                        "type": "image",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "33",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "url",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": "",
+                        "preview_size": "medium",
+                        "wpml_cf_preferences": 1
+                    },
+                    {
+                        "key": "field_654a992c588ef",
+                        "label": "Изображение в шапке (для мобильных устройств)",
+                        "name": "contact-img-mobile",
+                        "aria-label": "",
+                        "type": "image",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "33",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "url",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": "",
+                        "preview_size": "medium",
+                        "wpml_cf_preferences": 1
+                    },
+                    {
+                        "key": "field_654a992a588ee",
+                        "label": "Фоновое изображение на странице",
+                        "name": "contact-img-bg",
+                        "aria-label": "",
+                        "type": "image",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "33",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "url",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": "",
+                        "preview_size": "medium",
+                        "wpml_cf_preferences": 1
+                    }
+                ]
+            },
+            {
+                "key": "field_654a9d95b6b67",
+                "label": "Текст для формы свзяи",
+                "name": "contact-text",
+                "aria-label": "",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "table",
+                "wpml_cf_preferences": 1,
+                "sub_fields": [
+                    {
+                        "key": "field_654a9db8b6b68",
+                        "label": "Заголовок",
+                        "name": "contact-form-head",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "wpml_cf_preferences": 2
+                    },
+                    {
+                        "key": "field_654a9dd1b6b69",
+                        "label": "Текст под заголовком",
+                        "name": "contact-form-text",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "wpml_cf_preferences": 2
+                    }
+                ]
+            },
+            {
+                "key": "field_654a9deeb6b6a",
+                "label": "Контактная форма",
+                "name": "contact-form",
+                "aria-label": "",
+                "type": "acf_cf7",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "wpml_cf_preferences": 2
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_template",
+                    "operator": "==",
+                    "value": "page-contact.php"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "left",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "the_content"
+        ],
+        "active": true,
+        "description": "",
+        "show_in_rest": 0,
+        "acfml_field_group_mode": "advanced"
+    },
+    {
+        "key": "group_6543f105173a8",
+        "title": "Настройки сайта",
+        "fields": [
+            {
+                "key": "field_6544224c96c3c",
+                "label": "Логотипы",
+                "name": "kls-logos",
+                "aria-label": "",
+                "type": "group",
+                "instructions": "Лого должно быть в формате png или jpg. Если не добавлять логотип, то на сайте отображается логотип по умолчанию",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "table",
+                "sub_fields": [
+                    {
+                        "key": "field_6543f105db466",
+                        "label": "Логотип в шапке",
+                        "name": "kls-logo-top",
+                        "aria-label": "",
+                        "type": "image",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "url",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": "",
+                        "preview_size": "medium"
+                    },
+                    {
+                        "key": "field_6544227896c3d",
+                        "label": "Логотип в подвале",
+                        "name": "kls-logo-footer",
+                        "aria-label": "",
+                        "type": "image",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "url",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": "",
+                        "preview_size": "medium"
+                    }
+                ]
+            },
+            {
+                "key": "field_6543f748c961d",
+                "label": "Номера телефонов",
+                "name": "kls-phones",
+                "aria-label": "",
+                "type": "group",
+                "instructions": "Номер вводить в полном формате без +",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "table",
+                "sub_fields": [
+                    {
+                        "key": "field_6543f797c961e",
+                        "label": "Телефон",
+                        "name": "kls-phone",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
+                        "key": "field_6543f7b0c961f",
+                        "label": "Факс",
+                        "name": "kls-fax",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_6546b1109ee2a",
+                "label": "Email для клиентов",
+                "name": "kls-email-kleints",
+                "aria-label": "",
+                "type": "email",
+                "instructions": "Введите email, который будет виден посетителям и на который они смогут отправить письмо для связи.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6543f8a6f1fbe",
+                "label": "Расположение",
+                "name": "kls-location",
+                "aria-label": "",
+                "type": "group",
+                "instructions": "Введите адрес БЕЗ указания страны и города. Только улица и номер",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "table",
+                "sub_fields": [
+                    {
+                        "key": "field_654aa3ea61566",
+                        "label": "Страна и город",
+                        "name": "kls-country",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
+                        "key": "field_6543f8b7f1fbf",
+                        "label": "Адрес",
+                        "name": "kls-address",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
+                        "key": "field_654aa40861567",
+                        "label": "Ссылка на офис",
+                        "name": "kls-location-url",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_6546b0356ac5b",
+                "label": "График работы",
+                "name": "kls-schedule",
+                "aria-label": "",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "table",
+                "sub_fields": [
+                    {
+                        "key": "field_6546b06e6ac5c",
+                        "label": "Рабочие дни",
+                        "name": "kls-schedule-days",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "Укажите в какие дни работает фирма",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
+                        "key": "field_6546b0936ac5d",
+                        "label": "Рабочее время",
+                        "name": "kls-schedule-time",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "Укажите в какое время открыта фирма",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_6546af53b217f",
+                "label": "Соц. сети",
+                "name": "kls-socials",
+                "aria-label": "",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "key": "field_6546af69b2180",
+                        "label": "Facebook",
+                        "name": "kls-facebook",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
+                        "key": "field_6546af8db2181",
+                        "label": "Instagram",
+                        "name": "kls-instagram",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
+                        "key": "field_6546afb004479",
+                        "label": "Whatsapp",
+                        "name": "kls-whatsapp",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": ""
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "site-settings"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "left",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0,
+        "acfml_field_group_mode": "advanced"
+    },
+    {
+        "key": "ui_options_page_6543f661c6853",
+        "title": "Настройки сайта",
+        "active": true,
+        "menu_order": 0,
+        "page_title": "Настройки сайта",
+        "menu_slug": "site-settings",
+        "parent_slug": "none",
+        "advanced_configuration": false,
+        "icon_url": "",
+        "menu_title": "",
+        "position": null,
+        "redirect": false,
+        "description": "",
+        "update_button": "Обновить",
+        "updated_message": "Настройки были обновлены",
+        "capability": "edit_posts",
+        "data_storage": "options",
+        "post_id": "",
+        "autoload": false
+    }
+]

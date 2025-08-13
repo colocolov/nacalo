@@ -1,0 +1,200 @@
+.hello
+  &__container
+    padding-top: 40px
+    font-size: 16px
+    margin-bottom: 30px
+    h1
+      font-size: 32px
+      font-weight: 700
+      margin-bottom: 10px
+    h2
+      font-size: 26px
+      font-weight: 700
+      margin-bottom: 5px
+      margin-top: 30px
+    h3
+      font-weight: 700
+      margin-bottom: 5px
+      margin-top: 30px
+      font-size: 22px
+    a
+      text-decoration: underline
+    p:not(:last-child)
+      margin-bottom: 7px
+
+  &__subtext
+    font-size: 13px
+    font-style: italic
+
+.icon-svg
+  fill: transparent
+  stroke: transparent
+  width: 40px
+  height: 40px
+  transition: fill 0.3s ease-in
+  &--inst
+    fill: $red
+  &--fb
+    fill: $black
+  @media (any-hover: hover) and (pointer: fine)
+    &:hover
+      fill: #c3dde7
+      cursor: pointer
+
+.example
+  background-color: darken($grey, 15)
+  padding: 15px
+  margin-top: 7px
+  font-size: 16px
+.code
+  background-color: darken($grey, 3)
+  padding: 2px 7px
+  color: darken($red, 10)
+  border-radius: 3px
+.code-full
+  background-color: darken($grey, 3)
+  padding: 17px
+  color: darken($red, 10)
+  border-radius: 5px
+  display: inline-block
+  margin: 5px 0
+
+.data-counter
+  font-size: 30px
+  line-height: 1.1
+  font-weight: 700
+
+// НАЧАЛО АНИАМЦИИ ТЕКСТА
+// ОБЯЗАТЕЛЬНО СТИЛИ ПЕРЕНЕСТИ В ШАБЛОН SASS->BASIC->_animation !!!
+
+.text-animate
+  opacity: 0
+  transform: translateX(-50px)
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out
+  &.visible
+    opacity: 1
+    transform: translateX(0)
+
+// КОНЕЦ АНИАМЦИИ ТЕКСТА
+
+
+
+// НАЧАЛО АНИАМЦИИ ЗАГОЛОВКА 
+// ОБЯЗАТЕЛЬНО СТИЛИ ПЕРЕНЕСТИ В ШАБЛОН SASS->BASIC->_animation !!!
+
+.head-animate .letter
+  opacity: 0
+  display: inline-block
+  min-width: 2px
+  transition: 0.3s all
+  // transition: opacity 0.3s;
+
+.head-animate.active .letter
+  animation: letterAppear 0.4s ease-out forwards
+
+/* Сохраняем пробелы между словами */
+.head-animate .space
+  display: inline-block
+  width: 0.4em
+
+/* Стили для анимации */
+@keyframes letterAppear
+  from
+    opacity: 0
+    transform: translateX(-15px)
+
+  to
+    opacity: 1
+    transform: translateX(0)
+
+// КОНЕЦ АНИАМЦИИ ЗАГОЛОВКА
+
+
+
+/// СТИЛИ ДЛЯ ЛИНИИ И РАЗДЕОВ
+
+.scroll-animation
+  position: relative
+  // min-height: 100vh
+  overflow-x: hidden
+
+
+.line
+  position: absolute
+  top: 50%
+  left: 50%
+  width: 100vw
+  height: 2px
+  background: #000
+  transform: translate(-50%, -50%) scaleX(0)
+  transform-origin: left
+
+
+.sections
+  position: relative
+  z-index: 2
+  width: var(--container-width)
+  margin: 0 auto
+  padding: 40px 0
+  display: flex
+  justify-content: space-between
+
+
+.section
+  width: 23%
+  opacity: 0
+  transform: translateY(30px)
+  transition: all 0.6s ease
+
+
+  &.visible
+    opacity: 1
+    transform: translateY(0)
+
+
+
+/// КОНЕЦ ---- СТИЛИ ДЛЯ ЛИНИИ И РАЗДЕОВ
+
+
+
+//
+
+.mb20
+  margin-bottom: 20px
+
+.hotkeys
+  margin-top: 20px
+  &__container
+    display: flex
+    gap: 30px
+    padding: 0
+  &__wrap
+    flex: 1 1 49%
+  &__title
+    // margin-bottom: 5px
+    font-weight: 700
+    color: $red
+    border-bottom: 1px solid $red
+  &__use
+    margin-bottom: 7px
+    font-size: 16px
+    border-bottom: 1px solid $black
+    padding-bottom: 3px
+    background-color: $grey
+    padding-top: 5px
+  &__code
+    color: $red
+    font-style: italic
+  &__blue
+    color: blue
+  &__list
+    display: flex
+    flex-direction: column
+  &__item
+    &:not(:last-child)
+      margin-bottom: 7px
+    span
+      font-weight: bold
+
+
+

@@ -1,0 +1,196 @@
+# Copyright (C) 2020 Automattic
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: kls-theme 1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/_s\n"
+"POT-Creation-Date: 2025-03-06 14:02+0200\n"
+"PO-Revision-Date: 2025-04-04 16:07+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Generator: Poedit 3.5\n"
+"X-Domain: _s\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html__\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: assets\n"
+
+#: 404.php:19
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Îmi pare rău! Pagina nu a fost găsită."
+
+#: 404.php:24
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or other page?"
+msgstr ""
+"Se pare că ceea ce cauți nu a fost găsit. Încercați să accesați meniul sau "
+"să reveniți la pagina principală."
+
+#: 404.php:26
+msgid "Go home"
+msgstr "Acasă"
+
+#: comments.php:35
+#, php-format
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr ""
+
+#: comments.php:68
+msgid "Comments are closed."
+msgstr ""
+
+#: footer.php:25
+msgid "Services"
+msgstr ""
+
+#: footer.php:35 page-contact.php:11
+msgid "Contacts"
+msgstr ""
+
+#: footer.php:37
+msgid "Address"
+msgstr ""
+
+#: footer.php:38
+msgid "Email"
+msgstr ""
+
+#: footer.php:44
+msgid "Phone"
+msgstr ""
+
+#: footer.php:45
+msgid "Fax"
+msgstr ""
+
+#: footer.php:50
+msgid "Schedule"
+msgstr ""
+
+#: footer.php:52
+msgid "Work schedule"
+msgstr ""
+
+#: functions.php:56
+msgid "Menu Top"
+msgstr ""
+
+#: functions.php:57
+msgid "Menu Languages"
+msgstr ""
+
+#: functions.php:135
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:137
+msgid "Add widgets here."
+msgstr ""
+
+#: inc/template-tags.php:63
+msgid ", "
+msgstr ""
+
+#: inc/template-tags.php:66
+#, php-format
+msgid "Posted in %1$s"
+msgstr ""
+
+#: inc/template-tags.php:73
+#, php-format
+msgid "Tagged %1$s"
+msgstr ""
+
+#: inc/template-tags.php:83
+#, php-format
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#: inc/template-tags.php:100 template-parts/content-page.php:39
+#, php-format
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#: page-contact.php:19
+msgid "email"
+msgstr ""
+
+#: page-contact.php:23
+msgid "Phone number"
+msgstr ""
+
+#: page-contact.php:34
+msgid "Still have questions?"
+msgstr ""
+
+#: search.php:21
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: single.php:23
+msgid "Previous:"
+msgstr ""
+
+#: single.php:24
+msgid "Next:"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/content-none.php:24
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:37
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:44
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: template-parts/content-page.php:25 template-parts/content.php:53
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content.php:40
+#, php-format
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#~ msgid "office"
+#~ msgstr "oficiu"
+
+#~ msgid "Call us"
+#~ msgstr "Suna-ne"
+
+#~ msgid "Submit"
+#~ msgstr "Trimite"
+
+#~ msgid "Your browser does not support video."
+#~ msgstr "Browserul dvs. nu acceptă videoclipuri."
+
+#~ msgid "Hit up"
+#~ msgstr "Comanda apel"
+
+#~ msgid "Advantages"
+#~ msgstr "Avantaje"
+
+#~ msgid "versions"
+#~ msgstr "de opțiuni"
