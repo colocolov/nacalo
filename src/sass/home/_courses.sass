@@ -1,0 +1,59 @@
+.courses
+  background: $gradient-green
+  margin-top: var(--sectionPaddingTop)
+  margin-bottom: var(--sectionPaddingBottom)
+  padding-top: var(--sectionPaddingTop)
+  padding-bottom: var(--sectionPaddingBottom)
+  color: $white
+
+  &__container
+    position: relative
+    background-image: url("../images/bg/branch.png")
+    background-position: bottom left
+    background-repeat: no-repeat
+    background-size: 1063px auto
+
+  &__title
+    margin-bottom: 148px
+  &__head
+  &__subhead
+    font-size: 32px
+    color: $grey
+  &__info
+    margin-bottom: 148px
+    max-width: 71.5% // 1015/1430
+    font-size: 36px
+  &__list
+    display: flex
+    gap: 20px
+  &__item
+    flex-basis: 360px
+    border-radius: var(--borderRadius)
+    overflow: hidden
+    padding: 20px 20px 100px
+    // display: flex
+    // flex-direction: column
+    // justify-content: space-between
+    background-image: url("../images/bg/logo.svg")
+    background-repeat: no-repeat
+    background-position: bottom 20px left 20px
+    background-size: 100px 60px
+    background-color: rgba(78, 88, 88, 0.2)
+    transition: box-shadow 0.3s ease-in
+    @media (any-hover: hover) and (pointer: fine)
+      &:hover
+        box-shadow: $box-shadow
+        cursor: pointer
+  &__name
+    margin-bottom: 20px
+    font-size: 32px
+    min-height: 77px
+  &__descr
+    font-size: 18px
+  &__photo
+    border-radius: var(--borderRadius)
+    overflow: hidden
+    flex-grow: 1
+    img
+      width: 100%
+      object-fit: cover

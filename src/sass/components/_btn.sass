@@ -22,6 +22,7 @@ a.btn
   // box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
   box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.25)
   transition: background 0.5s ease-in-out, color 0.5s ease-in-out, transform 1.5s ease
+  border: 1px solid rgba(255, 255, 255, 0.3)
   &:focus
     outline: none
     // background: $gradient-dark
@@ -37,19 +38,24 @@ a.btn
       color: $white
   &-error
     margin-top: 20px
-  &-hero
+  &--hero
     background-color: rgba(0, 0, 0, 0.1)
     backdrop-filter: blur(4px)
     border: 1px solid rgba(255, 255, 255, 0.3)
   &--about
     position: absolute
     top: 0
-    right: 0
+    right: 35px
     color: $dark-grey
     background-color: rgba(#202020, 0.1)
     @media (any-hover: hover) and (pointer: fine)
       &:hover
         color: $dark-grey
+  &--courses
+    position: absolute
+    top: 0
+    right: 35px
+    background-color: rgba(#202020, 0.1)
 
 
 
