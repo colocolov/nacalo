@@ -12,7 +12,10 @@
 
   &__container
     position: relative
-    background: $bgc url("../images/bg/hero.jpg") center / cover no-repeat
+    background-image: url("../images/bg/hero.jpg")
+    background-size: cover
+    background-position: center
+    background-attachment: fixed
     overflow: hidden
     border-radius: var(--borderRadius)
     box-shadow: $box-shadow
@@ -51,29 +54,34 @@
     margin-bottom: 40px
 
   &__est
-    background-color: $white
-    padding: 4px 73px
+    // background-color: $white
+    // padding: 4px 73px
     border-radius: 5px
-    transform: translateY(-9px)
+    transform: translateY(7px)
     display: inline-flex
     align-items: center
     justify-content: center
+    width: 284px
+    height: 48px
+    overflow: hidden
     span
-      font-size: 32px
-      text-transform: lowercase
-      font-family: $font-first
+      // font-size: 32px
+      // text-transform: lowercase
+      // font-family: $font-first
       // margin-top: -5px
 
       // прозрачность 
-      background-image: url("../images/bg/hero.jpg")
-      background-size: cover
-      background-position: center
 
-      background-clip: text
-      color: transparent
+      // color: transparent
+      // background-clip: text
+
+      // background-image: inherit
+      // background: url("../images/bg/hero.jpg") center/cover no-repeat
+
+      /* Чтобы фон текста совпадал с задним фоном */
+      // backgrou?nd-attachment: fixed
 
       /* Фикс, чтобы фон под текстом совпадал с фоном страницы */
-      background-attachment: fixed
 
 
   &__clip

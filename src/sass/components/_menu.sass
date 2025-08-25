@@ -76,11 +76,12 @@
       display: flex
       justify-content: space-between
       transition: background-color 0.3s ease
+      color: $white
       @media (any-hover: hover) and (pointer: fine)
-      &:hover
-        // background-color: lighten($black, 3)
-        &:last-child a
-          color: $white
+        &:hover
+          // background-color: lighten($black, 3)
+          &:last-child a
+            color: $white
       @include mediaNotebook
         padding: 15px 10px
         margin-bottom: 7px
@@ -136,7 +137,7 @@
     transition: color 0.3s ease
     // &:not(:last-child)
     //   margin-right: 39px
-    // нижняя линия при наведении
+    // ---------- НИЖНЯЯ ЛИНЯЯ ПРИ НАВЕДЕНИИ
     &::before
       position: absolute
       content: ''
@@ -149,7 +150,7 @@
     @media (any-hover: hover) and (pointer: fine)
       &:hover
         &::before
-          width: 100%
+          // width: 100%
         &:last-child a
           // color: $white
 
