@@ -1,19 +1,71 @@
 .footer
   margin-top: var(--sectionPaddingTop)
-  margin-bottom: 80px
+  margin-bottom: 20px
 
   &__container
     // padding: 60px 0
     color: $white
     background-color: $dark-grey
-    padding: var(--sectionPaddingTop) 15px
+    padding: var(--sectionPaddingTop) 20px
     border-radius: var(--borderRadius)
     box-shadow: $box-shadow
+    color: #F0EFED
+    font-size: 32px
+    font-family: $font-second
+    display: flex
+    justify-content: space-between
 
-  &__item
-    transition: color 0.3s ease
+
+  &__data
+    display: flex
+    flex-direction: column
+  &__adrress
+    color: inherit
+    margin-bottom: 40px
+    transition: color 0.3s ease-in
+    @media (any-hover: hover) and (pointer: fine)
+      &:hover
+        color: $beige
+  &__phone
+    color: inherit
     &:not(:last-child)
-      margin-bottom: 19px
-    a
-      cursor: pointer
+      margin-bottom: 10px
+      transition: color 0.3s ease-in
+    @media (any-hover: hover) and (pointer: fine)
+      &:hover
+        color: $beige
+  &__info
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    justify-content: space-between
+  &__social
+    color: $beige
+    font-size: 24px
+    font-family: $font-first
+    position: relative
+    &::before
+      position: absolute
+      content: ''
+      display: block
+      bottom: -6px
+      left: 0
+      right: 0
+      // width: 100%
+      height: 2px
+      background-color: $beige
+      transition: left 0.5s ease
+    @media (any-hover: hover) and (pointer: fine)
+      &:hover
+        &::before
+          // width: 0%
+          // right: 0
+          left: 100%
 
+  &__email
+    color: inherit
+    font-size: 48px
+    transition: color 0.3s ease-in
+    @media (any-hover: hover) and (pointer: fine)
+      &:hover
+        color: $beige

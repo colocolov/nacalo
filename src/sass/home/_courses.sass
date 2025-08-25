@@ -1,17 +1,24 @@
 .courses
-  background: $gradient-green
+
   margin-top: var(--sectionPaddingTop)
   margin-bottom: var(--sectionPaddingBottom)
-  padding-top: var(--sectionPaddingTop)
-  padding-bottom: var(--sectionPaddingBottom)
+
   color: $white
 
   &__container
+    border-radius: var(--borderRadius)
+    overflow: hidden
+    padding-right: 20px
+    padding-left: 20px
+    padding-top: var(--sectionPaddingTop)
+    padding-bottom: 80px
     position: relative
+    background: $gradient-green
     background-image: url("../images/bg/branch.png")
     background-position: bottom left
     background-repeat: no-repeat
     background-size: 1063px auto
+    box-shadow: $box-shadow
 
   &__title
     margin-bottom: 148px
@@ -27,7 +34,7 @@
     display: flex
     gap: 20px
   &__item
-    flex-basis: 360px
+    flex: 1 0 360px
     border-radius: var(--borderRadius)
     overflow: hidden
     padding: 20px 20px 100px
@@ -57,3 +64,4 @@
     img
       width: 100%
       object-fit: cover
+      height: 100%

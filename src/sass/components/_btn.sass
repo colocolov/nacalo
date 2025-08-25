@@ -44,7 +44,7 @@ a.btn
     border: 1px solid rgba(255, 255, 255, 0.3)
   &--about
     position: absolute
-    top: 0
+    top: 40px
     right: 35px
     color: $dark-grey
     background-color: rgba(#202020, 0.1)
@@ -53,9 +53,15 @@ a.btn
         color: $dark-grey
   &--courses
     position: absolute
-    top: 0
+    top: 40px
     right: 35px
     background-color: rgba(#202020, 0.1)
+  &--entry
+    background-color: rgba(32, 32, 32, 0.1)
+    color: $dark-grey
+    @media (any-hover: hover) and (pointer: fine)
+      &:hover
+        color: $dark-grey
 
 
 
