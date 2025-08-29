@@ -77,8 +77,19 @@
       justify-content: space-between
       transition: background-color 0.3s ease
       color: $white
+
+      // background-image: $gradient-green
+      background-image: linear-gradient(to right, $white 50%, $black 50%)
+      background-position: 0
+      background-size: 200%
+      transition: all 0.4s
+      -webkit-background-clip: text
+      -webkit-text-fill-color: transparent
+      -webkit-transition: all 0.4s
+
       @media (any-hover: hover) and (pointer: fine)
         &:hover
+          background-position: -100%
           // background-color: lighten($black, 3)
           &:last-child a
             color: $white
@@ -138,21 +149,21 @@
     // &:not(:last-child)
     //   margin-right: 39px
     // ---------- НИЖНЯЯ ЛИНЯЯ ПРИ НАВЕДЕНИИ
-    &::before
-      position: absolute
-      content: ''
-      display: block
-      bottom: -6px
-      width: 0%
-      height: 2px
-      background-color: $white
-      transition: width 0.5s ease
-    @media (any-hover: hover) and (pointer: fine)
-      &:hover
-        &::before
-          // width: 100%
-        &:last-child a
-          // color: $white
+    // &::before
+    //   position: absolute
+    //   content: ''
+    //   display: block
+    //   bottom: -6px
+    //   width: 0%
+    //   height: 2px
+    //   background-color: $white
+    //   transition: width 0.5s ease
+    // @media (any-hover: hover) and (pointer: fine)
+    //   &:hover
+    //     &::before
+    //       // width: 100%
+    //     &:last-child a
+    //       // color: $white
 
     // уточнить!!!
     // &:last-child a

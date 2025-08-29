@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta name="theme-color" content="#111111">
   <!-- подключение стилей -->
-  <link rel="stylesheet" href="css/style.min.css?ver=08251608">
+  <link rel="stylesheet" href="css/style.min.css?ver=08291343">
   <!-- подключение скриптов -->
-  <script defer src="js/main.min.js?ver=08251608"></script>
+  <script defer src="js/main.min.js?ver=08291343"></script>
   <!-- подключение favicon -->
   <!-- <link rel="icon" href="images/favicon/favicon.svg" />
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
@@ -26,10 +26,22 @@
     <div class="header__menu menu">
       <nav class="menu__body" title="Main navigation">
         <ul class="menu__list">
-          <li class="menu__item"><a class="menu__link" href="/">Главная</a></li>
-          <li class="menu__item"><a class="menu__link" href="#about">Информация</a></li>
-          <li class="menu__item"><a class="menu__link" href="#courses">Программы</a></li>
-          <li class="menu__item"><a class="menu__link" href="#contacts">Контакты</a></li>
+          <li class="menu__item">
+            <a class="menu__link" href="/">Главная</a>
+            <div class="menu__mask"></div>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#about">Информация</a>
+            <div class="menu__mask"></div>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#courses">Программы</a>
+            <div class="menu__mask"></div>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#contacts">Контакты</a>
+            <div class="menu__mask"></div>
+          </li>
         </ul>
       </nav>
       <button type="button" aria-label="Open Menu" aria-expanded="false" class="menu__icon">
@@ -81,9 +93,9 @@
       <section class="about" id="about">
   <div class="about__container">
 
-    <div class="about__title">
-      <h2 class="heading about__head">О нас</h2>
-      <div class="about__subhead">Про школу “Начало”</div>
+    <div class="about__title" data-scroll-animation>
+      <h2 class="heading about__head head-animate" data-letter-delay="0.1">О нас</h2>
+      <div class="about__subhead animated-block" data-direction="down">Про школу “Начало”</div>
     </div>
 
     <div class="about__main">
@@ -104,13 +116,13 @@
       </div>
 
       <ul class="about__icons">
-        <li class="about__item">
+        <li class="about__item ">
           <img src="images/icons/book.png" loading="lazy" width="150" height="150" alt="icon">
         </li>
-        <li class="about__item">
+        <li class="about__item ">
           <img src="images/icons/man.png" loading="lazy" width="150" height="150" alt="icon">
         </li>
-        <li class="about__item">
+        <li class="about__item ">
           <img src="images/icons/app.png" loading="lazy" width="150" height="150" alt="icon">
         </li>
       </ul>
@@ -124,67 +136,68 @@
       <section class="courses" id="courses">
   <div class="courses__container">
 
-    <div class="courses__title">
-      <h2 class="heading courses__head">Программы</h2>
-      <div class="courses__subhead">Какую программу выбрать?</div>
+    <div class="courses__title" data-scroll-animation>
+      <h2 class="heading courses__head head-animate" data-letter-delay="0.1"">Программы</h2>
+      <div class=" courses__subhead animated-block" data-direction="down">Какую программу выбрать?
     </div>
+  </div>
 
-    <div class="courses__info">
-      Обучение длится 3 года в заочной форме. С сентября по май проходит 18 учебных сессий — по одной в месяц. Каждая
-      сессия
-      проводится в пятницу (16:00–20:00) и субботу (9:00–16:00) на территории церкви «Вефиль». Обучение ведётся на
-      русском
-      языке.
+  <div class="courses__info">
+    Обучение длится 3 года в заочной форме. С сентября по май проходит 18 учебных сессий — по одной в месяц. Каждая
+    сессия
+    проводится в пятницу (16:00–20:00) и субботу (9:00–16:00) на территории церкви «Вефиль». Обучение ведётся на
+    русском
+    языке.
+  </div>
+
+  <div class="courses__list">
+    <div class="courses__item glass">
+      <h3 class="courses__name">Проповедники</h3>
+      <div class="courses__descr">Данная программа доступна как братьям,
+        так и сёстрам. Эта программа послужит хорошей базой для тех, кто желает усилить свои знания Священного Писания
+        и библейского богословия, а также для тех, кто преподаёт или хотел бы преподавать
+        в воскресной школе или заниматься организацией и проведением лагерей.</div>
     </div>
-
-    <div class="courses__list">
-      <div class="courses__item glass">
-        <h3 class="courses__name">Проповедники</h3>
-        <div class="courses__descr">Данная программа доступна как братьям,
-          так и сёстрам. Эта программа послужит хорошей базой для тех, кто желает усилить свои знания Священного Писания
-          и библейского богословия, а также для тех, кто преподаёт или хотел бы преподавать
-          в воскресной школе или заниматься организацией и проведением лагерей.</div>
-      </div>
-      <div class="courses__item glass">
-        <h3 class="courses__name">Христианское Образование</h3>
-        <div class="courses__descr">Данная программа рассчитана на братьев
-          от 16 лет, которые являются членами церкви минимум 1 год. Программа призвана дать теоретические знания,
-          необходимые
-          для составления библейской проповеди, практические навыки устного изложения проповеди, а также научить
-          основным
-          принципам и методам толкования Библии.</div>
-      </div>
-      <div class="courses__photo">
-        <img src="images/bg/students.jpg" loading="lazy" width="600" height="400" alt="">
-      </div>
+    <div class="courses__item glass">
+      <h3 class="courses__name">Христианское Образование</h3>
+      <div class="courses__descr">Данная программа рассчитана на братьев
+        от 16 лет, которые являются членами церкви минимум 1 год. Программа призвана дать теоретические знания,
+        необходимые
+        для составления библейской проповеди, практические навыки устного изложения проповеди, а также научить
+        основным
+        принципам и методам толкования Библии.</div>
     </div>
+    <div class="courses__photo">
+      <img src="images/bg/students.jpg" loading="lazy" width="600" height="400" alt="">
+    </div>
+  </div>
 
-    <button href="#" class="btn-reset btn btn--courses openModalBtn">Набор 2026</button>
+  <button href="#" class="btn-reset btn btn--courses openModalBtn">Набор 2026</button>
 
   </div><!-- /.courses__container -->
 </section><!-- /.courses -->
       <section class="entry">
   <div class="entry__container">
 
-    <div class="entry__title">
-      <h2 class="heading entry__head">Поступление</h2>
-      <div class="entry__subhead">Что необходимо для приёма?</div>
+    <div class="entry__title" data-scroll-animation>
+      <h2 class="heading entry__head head-animate" data-letter-delay="0.1">Поступление</h2>
+      <div class="entry__subhead animated-block" data-direction="down">Что необходимо для приёма?</div>
     </div>
 
-    <ul class="entry__list">
-      <li class="entry__item">
+    <ul class="entry__list line-progress">
+      <li class="entry__item line-progress__item" data-delay="0">
         <span>1</span>
         Заполнить анкету
       </li>
-      <li class="entry__item">
+      <li class="entry__item line-progress__item" data-delay="300">
         <span>2</span>
         Копия паспорта
       </li>
-      <li class="entry__item">
+      <li class="entry__item line-progress__item" data-delay="600">
         <span>3</span>
         Рекомендация пастора
       </li>
-      <li class="entry__item">
+      <li class="entry__item line-progress__item" data-delay="900">
         <span>4</span>
         Пройти собеседование
       </li>
@@ -216,14 +229,53 @@
   </div><!-- /.container -->
 </footer><!-- /.footer -->
     <!-- Модальное окно -->
-<div id="modal" class="modal">
-  <div class="modal-content">
-    <span id="closeModal" class="close">&times;</span>
+<div id="modal" class="modal glass open">
+  <span id="closeModal" class="modal__close">&times;</span>
 
-    <h3 class="modal__head">НАЗВАНИЕ</h3>
-    <div>Введите ваш номер телефона</div>
-    <input type="tel" id="phone" placeholder="Ваш номер телефона">
-    <button id="submit">Отправить</button>
+  <div class="modal__content">
+    <h3 class="modal__head">НАБОР 2026 БИБЛЕЙСКАЯ ШКОЛА “НАЧАЛО”</h3>
+    <div class="modal__text">
+      Для записи в Библейскую школу «Начало» на 2025-26 учебный год заполните и отправьте свои данные. Мы внесём вас в
+      список
+      желающих поступить на обучение и позже свяжемся
+      с вами, чтобы сообщить все подробности.
+    </div>
+
+    <div class="modal__form">
+      <form action="#" class="wpcf7-form">
+        <div class="contact__form">
+          <div class="contact__line">
+            <input id="name" class="contact__input" type="text" placeholder="Имя">
+          </div>
+          <div class="contact__line">
+            <input id="surname" class="contact__input" type="text" placeholder="Фамилия">
+          </div>
+          <div class="contact__line">
+            <input id="email" class="contact__input" type="email" placeholder="Email">
+          </div>
+          <div class="contact__line">
+            <input id="phone" class="contact__input" type="phone" placeholder="Телефон">
+          </div>
+
+          <p class="contact__subhead">Программа</p>
+          <div class="contact__courses">
+            <div class="contact__course">
+              <input id="sunday" class="contact__input" type="radio">
+              <span class="contact__label">Христианское образование</span>
+            </div>
+            <div class="contact__course">
+              <input id="preacher" class="contact__input" type="radio">
+              <span class="contact__label">Проповедники</span>
+            </div>
+          </div>
+        </div><!-- /.contact__form -->
+        <p>
+          <input class="wpcf7-form-control has-spinner wpcf7-submit btn-reset btn btn--send" type="submit"
+                 value="Отправить">
+        </p>
+      </form>
+    </div><!-- /.modal__form -->
+
   </div>
 </div>
   </div><!-- /.wrapper -->

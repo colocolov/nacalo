@@ -1,6 +1,6 @@
 @media ( min-width: 992px )
   .benefits__arrow
-            // имя  / продолжительность / ?? / ?? / время задерржки 
+    // имя  / продолжительность / ?? / ?? / время задерржки 
     animation: move-down 5s infinite linear
     // снимает дергание анимации
     backface-visibility: hidden
@@ -29,3 +29,83 @@
   100%
     opacity: 1
     transform: translateX(0px)
+
+.text-animate
+  opacity: 0
+  transform: translateX(-50px)
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out
+  &.visible
+    opacity: 1
+    transform: translateX(0)
+
+.animated-block
+  opacity: 0
+  transform: translateY(28px)
+  transition: opacity 1.8s ease-out, transform 1.0s ease-out
+  &.is-visible
+    opacity: 1
+
+
+/* Базовые настройки анимации */
+@keyframes slide-in
+  to
+    opacity: 1
+    transform: translate(0, 0)
+
+/* Направления анимации */
+.animated-block[data-direction="left"],
+.animated-block:not([data-direction])
+  transform: translateX(-100%)
+
+.animated-block[data-direction="left"]
+  transform: translateX(100%)
+.animated-block[data-direction="right"]
+  transform: translateX(-80%)
+.animated-block[data-direction="up"]
+  transform: translateY(100%)
+.animated-block.is-visible[data-direction="down"]
+  transform: translateY(0)
+/* Опционально - динамическое появление при скролле */
+@media (prefers-reduced-motion: no-preference)
+  .animated-block
+    animation-duration: 1.2s
+    animation-delay: 0.5s
+
+// появление блоков в одной линии
+.line-progress
+  // position: relative
+  width: 100%
+  // margin: 0 auto
+  display: flex
+  justify-content: space-between
+  gap: 20px
+  @include mediaTablet
+    flex-wrap: wrap
+  &__item
+    // width: 23%
+    // position: relative
+    opacity: 0
+    flex: 1
+    transform: translateX(55px)
+    transition: opacity 1s ease, transform 1s ease
+    &.visible
+      opacity: 1
+      transform: translateX(0)
+    @include mediaTablet
+      flex: 0 0 calc(50% - 20px)
+    @include mediaPhone
+      flex: 0 0 100%
+      // width: 100%
+      // padding-left: 20px
+      &:not(:last-child)
+        margin-bottom: 60px
+      // &::after
+      //   content: ''
+      //   position: absolute
+      //   top: 8px
+      //   left: -4px
+      //   width: 10px
+      //   height: 10px
+      //   background-color: $grey
+      //   border-radius: 50%
+      //   z-index: 3

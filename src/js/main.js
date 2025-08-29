@@ -3,7 +3,7 @@ import vars from "./_vars.js";
 
 // мои модули
 import "./modules/nav.js";
-import "./modules/animateNumber.js";
+// import "./modules/animateNumber.js";
 import "./modules/animateHeader.js";
 import "./modules/animateText.js";
 import "./modules/animateProgresLine.js";

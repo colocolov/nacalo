@@ -1,7 +1,7 @@
 .contact
 
   &__mes
-    color: $black
+    color: $bgc
     margin-right: 35px
     width: 45.588235% // 620/1360
   &__top
@@ -10,41 +10,98 @@
     width: 100%
     gap: 40px
   &__form
-    border: 1px solid $red
-    margin-bottom: 40px
+    // border: 1px solid $red
+    color: $bgc
+    margin-bottom: 64px
   &__line
-    border-bottom: 1px solid $black
+    border-bottom: 1px solid $bgc
     flex: 1 1 48%
-    height: 34px
+    height: 24px
+    &:not(:last-child)
+      margin-bottom: 20px
     p
       width: 100%
   &__input
+    appearance: none
+    display: inline-flex
+    place-content: center
+    color: $bgc
+    font-size: 18px
     background-color: transparent
-    height: 34px
+    // border: 1px solid $grey
+    height: 100%
     width: 100%
     transition: border 0.3s ease-in
+    cursor: pointer
+    &:checked
+      border-bottom: none
+      // background-color: #fff
+      // color: $black
+      // border-color: $black
+      &::after
+        content: ''
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        background-color: $bgc
+        z-index: -1
+        border-bottom: none
+      & + .contact__label
+        color: $black
     &::placeholder
       // font-family: 'Montserrat'
-      color: rgba($black, 0.6)
+      color: rgba($bgc, 0.5)
       transition: color 0.3s ease
     &:focus
-      border: 1px solid $black
+      // border-bottom: 1px solid $grey
 
   &__text
     height: 200px
-  &__textarea
-    color: rgba($black, 0.6)
+  &__subhead
+    margin-top: 20px
+    font-family: $font-second
+    font-size: 22px
+    margin-bottom: 30px
+  &__courses
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding-bottom: 30px
+    border-bottom: 1px solid $bgc
+  &__course
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    position: relative
+    max-width: 245px
+    height: 39px
+    border: 1px solid $bgc
+    width: 100%
+    // appearance: none
+    // cursor: pointer
+
+  &__label
+    content: ''
+    position: absolute
+    top: 50%
+    left: 0
     width: 100%
     height: 100%
-    padding: 10px
-    background-color: transparent
-    transition: border 0.3s ease-in
-    outline: none
-    resize: none
-    &::placeholder
-      transform: translateY(157px)
-    &:focus
-      border: 1px solid $black
+    pointer-events: none
+    // vertical-align: center
+    transform: translateY(-33%)
+    // width: px
+    // height: px
+    // display: inline-block
+    // padding: 8px 16px
+    // border: 2px solid #ccc
+    // border-radius: 4px
+    // background: #fff
+    // transition: all 0.2s
+    // margin-left: 8px
 
 
 .wpcf7-form

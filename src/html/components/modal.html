@@ -1,11 +1,50 @@
 <!-- Модальное окно -->
-<div id="modal" class="modal">
-  <div class="modal-content">
-    <span id="closeModal" class="close">&times;</span>
+<div id="modal" class="modal glass open">
+  <span id="closeModal" class="modal__close">&times;</span>
 
-    <h3 class="modal__head">НАЗВАНИЕ</h3>
-    <div>Введите ваш номер телефона</div>
-    <input type="tel" id="phone" placeholder="Ваш номер телефона">
-    <button id="submit">Отправить</button>
+  <div class="modal__content">
+    <h3 class="modal__head">НАБОР 2026 БИБЛЕЙСКАЯ ШКОЛА “НАЧАЛО”</h3>
+    <div class="modal__text">
+      Для записи в Библейскую школу «Начало» на 2025-26 учебный год заполните и отправьте свои данные. Мы внесём вас в
+      список
+      желающих поступить на обучение и позже свяжемся
+      с вами, чтобы сообщить все подробности.
+    </div>
+
+    <div class="modal__form">
+      <form action="#" class="wpcf7-form">
+        <div class="contact__form">
+          <div class="contact__line">
+            <input id="name" class="contact__input" type="text" placeholder="Имя">
+          </div>
+          <div class="contact__line">
+            <input id="surname" class="contact__input" type="text" placeholder="Фамилия">
+          </div>
+          <div class="contact__line">
+            <input id="email" class="contact__input" type="email" placeholder="Email">
+          </div>
+          <div class="contact__line">
+            <input id="phone" class="contact__input" type="phone" placeholder="Телефон">
+          </div>
+
+          <p class="contact__subhead">Программа</p>
+          <div class="contact__courses">
+            <div class="contact__course">
+              <input id="sunday" class="contact__input" type="radio">
+              <span class="contact__label">Христианское образование</span>
+            </div>
+            <div class="contact__course">
+              <input id="preacher" class="contact__input" type="radio">
+              <span class="contact__label">Проповедники</span>
+            </div>
+          </div>
+        </div><!-- /.contact__form -->
+        <p>
+          <input class="wpcf7-form-control has-spinner wpcf7-submit btn-reset btn btn--send" type="submit"
+                 value="Отправить">
+        </p>
+      </form>
+    </div><!-- /.modal__form -->
+
   </div>
 </div>
