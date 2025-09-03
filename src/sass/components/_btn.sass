@@ -11,43 +11,36 @@ a.btn
 .btn
   // align-self: center // если кнпка находится во flex-контейнере и нужно выровнять ее по середине
   display: inline-block
+  padding: 11px 70px 11px 70px
   background: $grey
   border-radius: 112px
-  // border: 2px solid $green
-  padding: 11px 70px 11px 70px
+  border: 1px solid rgba(255, 255, 255, 0.3)
   color: $white
   @include font(600, 32, 38)
   text-align: center
-  // text-transform: uppercase
-  // box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
   box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.25)
   transition: background 0.5s ease-in-out, color 0.5s ease-in-out, transform 1.5s ease
-  border: 1px solid rgba(255, 255, 255, 0.3)
   &:focus
     outline: none
-    // background: $gradient-dark
-    // color: $white
   &:active // НАЖАТИЕ
     transform: translateY(-4px)
-    // background: $red-tab
-    // color: $white
   @media (any-hover: hover) and (pointer: fine)
     &:hover
-      transform: translateY(-2px)
       background: transparent
+      transform: translateY(-2px)
       color: $white
   &-error
     margin-top: 20px
   &--hero
+    border: 1px solid rgba(255, 255, 255, 0.3)
     background-color: rgba(0, 0, 0, 0.1)
     backdrop-filter: blur(4px)
-    border: 1px solid rgba(255, 255, 255, 0.3)
   &--about
     position: absolute
     top: 40px
     right: 35px
-    color: $dark-grey
     background-color: rgba(#202020, 0.1)
+    color: $dark-grey
     @media (any-hover: hover) and (pointer: fine)
       &:hover
         background: $gradient-green
@@ -66,6 +59,8 @@ a.btn
         color: $white
   &--send
     background-color: rgba(32, 32, 32, 0.1)
+  @include mediaTablet
+    font-size: 22px
 
 
 

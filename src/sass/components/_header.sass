@@ -2,13 +2,12 @@
   position: fixed
   top: 60px
   left: 50%
-  transform: translateX(-50%)
-  // height: 50px
-  z-index: 10
+  padding: 12px 45px
   width: 100%
   max-width: 750px
-  padding: 12px 45px
   border-radius: 112px
+  transform: translateX(-50%)
+  z-index: 10
   // border: 1px solid $white
   // &::after
   //   content: ''
@@ -26,21 +25,26 @@
   //   z-index: 100
   //   width: 100%
   @include mediaPhone
-    position: fixed
+    position: relative
     top: 0
-    left: 0
-    width: 100%
-    z-index: 7
-    background-color: $black
+    padding-top: 60px
+    background-color: $bgc
+    border: none
+    box-shadow: none
 
   &__container
     display: flex
     align-items: center
     justify-content: flex-end
     gap: 0 45px
+    @include mediaTablet
+      background-color: $bgc
 
   &__logo
     margin-right: auto
     @include mediaPhone
       z-index: 5
 
+  &__menu
+    @include mediaTablet
+      margin: 0 auto
