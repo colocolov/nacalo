@@ -13,9 +13,15 @@
     color: #F0EFED
     border-radius: var(--borderRadius)
     box-shadow: $box-shadow
+    @include mediaPhoneMid
+      flex-direction: column
+    @include mediaPhone
+      padding: 40px 20px
   &__data
     display: flex
     flex-direction: column
+    @include mediaPhoneMid
+      margin-bottom: 30px
   &__adrress
     margin-bottom: 40px
     color: inherit
@@ -40,6 +46,9 @@
     flex-direction: column
     align-items: flex-end
     justify-content: space-between
+    @include mediaPhoneMid
+      flex-direction: column-reverse
+      align-items: flex-start
   &__social
     position: relative
     color: $beige
@@ -69,3 +78,6 @@
         color: $beige
     @include mediaTablet
       font-size: 32px
+    @include mediaPhoneMid
+      margin-bottom: 32px
+      text-align: left

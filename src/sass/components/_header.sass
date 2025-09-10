@@ -38,7 +38,7 @@
     justify-content: flex-end
     gap: 0 45px
     @include mediaTablet
-      background-color: $bgc
+      // background-color: $bgc
 
   &__logo
     margin-right: auto
@@ -48,3 +48,37 @@
   &__menu
     @include mediaTablet
       margin: 0 auto
+
+  &__info
+    display: none
+    width: 0
+    height: 0
+    opacity: 0
+    @include mediaPhone
+      display: flex
+      flex-direction: column-reverse
+      width: auto
+      height: auto
+      opacity: 1
+      align-items: flex-start
+  &__email
+    font-family: $font-second
+    font-weight: 700
+    font-size: 28px
+    color: $text-light
+  &__social
+    position: relative
+    color: $beige
+    font-size: 24px
+    font-family: $font-first
+    &::before
+      position: absolute
+      content: ''
+      display: block
+      bottom: -6px
+      left: 0
+      right: 0
+      height: 2px
+      background-color: $beige
+      transition: left 0.5s ease
+

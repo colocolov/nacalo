@@ -44,6 +44,8 @@
     @include mediaTablet
       width: 380px
       height: auto
+    @include mediaPhoneMid
+      width: 80% // 380/475
 
   &__head
     margin-bottom: 40px
@@ -55,6 +57,8 @@
     @include mediaTablet
       max-width: 62% // 264/373
       font-size: 32px
+    @include mediaPhoneMid
+      max-width: 100%
 
   &__est
     display: inline-flex

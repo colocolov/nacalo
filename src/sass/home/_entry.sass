@@ -4,6 +4,9 @@
 
   &__container
     padding: var(--sectionPaddingTop) 35px
+    @include mediaPhoneMid
+      display: flex
+      flex-direction: column
 
   &__title
     margin-bottom: 40px
@@ -11,8 +14,11 @@
   &__subhead
     font-size: 32px
     color: $grey
+    @include mediaPhone
+      font-size: 22px
   &__list
     margin-bottom: 25px
+
   &__item
     font-weight: 600
     font-size: 32px
@@ -27,4 +33,6 @@
       border-radius: 50%
       font-size: 28px
       border: 1px solid $black
+    @include mediaPhone
+      font-size: 28px
 

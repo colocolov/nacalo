@@ -89,3 +89,11 @@ if (menuLang && menuLang.firstElementChild) {
     menuLang.firstElementChild.classList.remove('current-languages');
   }
 }
+
+// удаление класса .glass у header на моб.устройствах
+if (window.innerWidth < 769) { 
+  const header = document.querySelector('header');
+  if (header.classList.contains('glass')) {
+    header.classList.remove('glass');
+  }
+}

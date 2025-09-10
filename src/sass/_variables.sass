@@ -40,6 +40,9 @@ $mobileSmall: 479.98px // Телефоны S - 480px
   --sectionPaddingTop: 40px
   --sectionPaddingBottom: 40px
   --borderRadius: 20px
+  @include mediaPhone
+    --sectionPaddingTop: 20px
+    --sectionPaddingBottom: 20px
   // ---------------- END
 
 
@@ -52,3 +55,5 @@ $mobileSmall: 479.98px // Телефоны S - 480px
 %head
   font-family: $font-second
   @include font(700, 42, calc(42 * 1.2))
+  @include mediaPhone
+    font-size: 34px

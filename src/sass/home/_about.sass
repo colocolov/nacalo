@@ -6,20 +6,32 @@
     padding: var(--sectionPaddingTop) 35px
     position: relative
     background: url("../images/bg/branch.png") center / contain no-repeat
-    background-position: fixed
+    // background-position: fixed
     min-height: 630px
     display: flex
     flex-direction: column
     justify-content: space-between
+    @include mediaPhone
+      gap: 30px
+      padding-left: 20px
+      padding-right: 20px
+      background-position: left bottom 80px
   &__title
   &__head
   &__subhead
     font-size: 32px
     color: $grey
+    @include mediaPhone
+      font-size: 22px
   &__main
     display: flex
     align-items: flex-end
     justify-content: space-between
+    gap: 20px
+    @include mediaTablet
+      flex-direction: column-reverse
+      align-items: flex-start
+
   &__info
     max-width: 670px
     p
@@ -28,6 +40,12 @@
   &__icons
     display: flex
     gap: 20px
+    @include mediaPhone
+      justify-content: space-between
+      width: 100%
+    @include mediaPhoneMid
+      gap: 10px
+
   &__item
     width: 180px
     height: 180px
@@ -44,3 +62,16 @@
           transform: scale(1.05)
     img
       transition: transform 1s ease-in
+    @media screen and (max-width: 1129.98px)
+      width: 150px
+      height: 150px
+    @include mediaPhone
+      width: 120px
+      height: 120px
+      img
+        width: 90%
+        height: 90%
+    @include mediaPhoneMid
+      width: 80px
+      height: 80px
+

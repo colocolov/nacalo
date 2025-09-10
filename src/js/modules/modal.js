@@ -6,7 +6,6 @@ if (modal) {
   const openModalBtns = document.querySelectorAll('.openModalBtn');
   const closeModalBtn = document.getElementById('closeModal');
   const submitBtn = document.getElementById('submit');
-  const socialLink = document.querySelectorAll('.social__icon');
   const body = document.body;
 
   // Функция закрытия окна
@@ -34,16 +33,6 @@ if (modal) {
       closeModal();
     }
   };
-
-  // Закрытие при клике на соц.сети
-  if (socialLink.length) {
-    socialLink.forEach((item) => {
-      item.addEventListener("click", () => {
-        closeModal();
-      });
-    });
-  }
-
 
   // Закрытие модального окна про клавише Esc
   document.addEventListener('keydown', function (e) {

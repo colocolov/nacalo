@@ -45,11 +45,21 @@ a.btn
       &:hover
         background: $gradient-green
         color: $white
+    @include mediaPhone
+      position: relative
+      top: unset
+      right: unset
+      margin: 0 auto
   &--courses
     position: absolute
     top: 40px
     right: 35px
     background-color: rgba(#202020, 0.1)
+    @include mediaPhone
+      position: relative
+      top: unset
+      right: unset
+      margin: 0 auto
   &--entry
     background-color: rgba(32, 32, 32, 0.1)
     color: $dark-grey
@@ -57,6 +67,8 @@ a.btn
       &:hover
         background: $gradient-green
         color: $white
+    @include mediaPhone
+      margin: 0 auto
   &--send
     background-color: rgba(32, 32, 32, 0.1)
   @include mediaTablet
