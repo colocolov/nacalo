@@ -56,6 +56,10 @@
 
     @include mediaTablet
       width: 95%
+    @include mediaPhone
+      margin-top: 10px
+      margin-bottom: 10px
+
     @include mediaPhoneSm
       padding: 20px 30px
 
@@ -76,7 +80,8 @@
     font-weight: 400
     span
       font-weight: 700
-
+    @include mediaPhone
+      margin-bottom: 40px
 
   &__btn
     display: block
@@ -111,3 +116,7 @@
     @include mediaTablet
       top: 40px
       right: 40px
+    @include mediaPhoneMid
+      top: 10px
+      right: 10px
+

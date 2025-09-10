@@ -70,6 +70,10 @@
     justify-content: space-between
     padding-bottom: 30px
     border-bottom: 1px solid $bgc
+    gap: 20px
+    @include mediaPhone
+      flex-wrap: wrap
+      justify-content: center
   &__course
     display: flex
     align-items: center
@@ -80,6 +84,8 @@
     height: 39px
     border: 1px solid $bgc
     width: 100%
+    @include mediaPhoneMid
+      max-width: 100%
     // appearance: none
     // cursor: pointer
 
